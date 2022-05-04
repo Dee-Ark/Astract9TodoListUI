@@ -1,21 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-login',
-//   templateUrl: './login.component.html',
-//   styleUrls: ['./login.component.css']
-// })
-// export class LoginComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -44,7 +26,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("jwt", token);
         this.invalidLogin = false;
         this.router.navigate(["/"]);
-        this.toastr.success("LoggedIn successfully", "Payment Detail Register");
+        this.toastr.success("LoggedIn successfully", "User login Successfully");
       },
       err => {
         this.invalidLogin = true;
