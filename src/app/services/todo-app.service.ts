@@ -8,8 +8,10 @@ import { Register } from '../models/register.model';
   providedIn: 'root'
 })
 export class TodoAppService {
-  readonly baseURL = "https://localhost:44321/api/ToDoItem";
-  readonly authURL = "https://localhost:44321/api/Authentication";
+  readonly baseURL = "http://oladapoobe-001-site8.dtempurl.com/api/ToDoItem";
+  //readonly baseURL = "https://localhost:44365/api/ToDoItem";
+  readonly authURL = "http://oladapoobe-001-site8.dtempurl.com/api/Authentication";
+  //readonly authURL = "https://localhost:44365/api/Authentication";
   list: TodoItem[]=[];
 
   constructor(private http: HttpClient) { }
